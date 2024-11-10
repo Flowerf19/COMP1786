@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <EditText
+        android:id="@+id/inputValue"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/inputUnit"
+        style="@style/SpinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/units"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/outputUnit"
+        style="@style/SpinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/units"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
