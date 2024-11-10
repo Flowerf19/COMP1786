@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Teacher ID TextView -->
+        <TextView
+            android:id="@+id/TeacherID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TeacherID"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Name TextView -->
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/TeacherID"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Specialty TextView -->
+        <TextView
+            android:id="@+id/Specialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Specialty"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/Name"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Contact Info TextView -->
+        <TextView
+            android:id="@+id/ContactInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Contact Info"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/Specialty"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Buttons for Edit and Delete -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_height="wrap_content"
+                android:layout_width="135dp"
+                android:layout_marginEnd="8dp"
+                android:text="Edit"
+                android:textColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

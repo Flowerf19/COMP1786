@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UnversalYogaJavaApplication"
+        tools:targetApi="31">
+
+        <!-- Add your activities here -->
+        <activity
+            android:name=".AddCourseActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_course"
+            android:theme="@style/Theme.UnversalYogaJavaApplication" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Declare the other activities -->
+        <activity android:name=".CourseActivity" />
+        <activity android:name=".InstructorActivity" />
+        <activity android:name=".AddInstructorActivity" />
+        <activity android:name=".ClassActivity"></activity>
+        <activity android:name=".AddClassActivity"></activity>
+        <activity android:name=".UpdateClassActivity"></activity>
+        <activity android:name=".UpdateInstructorActivity"></activity>
+        <activity android:name=".UpdateCourseActivity"></activity>
+
+
+
+    </application>
+</manifest>

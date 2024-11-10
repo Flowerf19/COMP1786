@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Universal Yoga</string>
+    <string name="title_activity_add_course">Add Course</string>
+    <string name="title_activity_add_instructor">Add Instructor</string>
+
+    <string-array name="yoga_types">
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="specialty_types">
+        <item>Basic</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Master</item>
+    </string-array>
+
+    <string name="specialty_prompt">Select Specialty</string>
+
+    <string-array name="class_days_of_week">
+        <item>All</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+</resources>

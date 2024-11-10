@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Class ID TextView -->
+        <TextView
+            android:id="@+id/ClassID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class ID"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Date TextView -->
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/ClassID"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Course ID TextView -->
+        <TextView
+            android:id="@+id/CourseID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Course ID"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/Date"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Day of Week TextView -->
+        <TextView
+            android:id="@+id/DayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Day of Week"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/CourseID"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Teacher Name TextView -->
+        <TextView
+            android:id="@+id/TeacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Teacher Name"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/DayOfWeek"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Buttons for Edit and Delete -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TeacherName">
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_height="wrap_content"
+                android:layout_width="135dp"
+                android:layout_marginEnd="8dp"
+                android:text="Edit"
+                android:textColor="@color/teal_200" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
